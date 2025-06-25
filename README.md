@@ -28,14 +28,3 @@ This package simplifies the use of MediaPipe tracking results by exposing a clea
 
 ### `HandDataProvider.cs`
 
-A singleton-based bridge that exposes MediaPipe hand landmark data to other scripts.
-
-```csharp
-// Get joint position
-HandDataProvider.Instance.TryGetJointPosition(0, 8, out Vector3 position);
-
-// Get distance between two joints
-HandDataProvider.Instance.TryGetJointDistance(0, 8, 1, 4, out float distance);
-
-// Get midpoint between two joints
-HandDataProvider.Instance.TryGetJointMidpoint(0, 8, 1, 4, out Vector3 center);
